@@ -45,7 +45,8 @@ navbarPage(
           condition = "input.sc1a1togL % 2 == 1", 
           selectInput("sc1a1sub1", "Cell information to subset:", 
                       choices = sc1conf[grp == TRUE]$UI, 
-                      selected = sc1def$grp1), 
+                      selected = sc1def$grp1,
+                      multiple = TRUE), 
           uiOutput("sc1a1sub1.ui"), 
           actionButton("sc1a1sub1all", "Select all groups", class = "btn btn-primary"), 
           actionButton("sc1a1sub1non", "Deselect all groups", class = "btn btn-primary") 
