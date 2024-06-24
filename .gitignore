@@ -1,0 +1,4 @@
+*.rds
+*.h5
+.virtual_documents/
+.ipynb_checkpoints/
